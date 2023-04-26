@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 60px;
+    font-weight: 250;
+    font-family: "Lobster", cursive;
+    padding-left: 5px;
+    text-transform: capitalize;
+  }
+  body {
+    background-image: url("page_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #watchContainer {
+    width: 30rem;
+    height: 20rem;
+    background-image: linear-gradient(rgb(34, 132, 230), 10%, rgb(3, 14, 19));
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+    box-shadow: 0px 0px 10px 5px gray;
+    padding: 10px;
+  }
+  
+  #displayTime {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(244, 239, 239);
+    font-weight: bolder;
+  }
+  .btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: large;
+    border: none;
+    margin: 0.2rem 0.8rem;
+    cursor: pointer;
+  }
+  #startBtn {
+    color: blue;
+    outline: blue;
+  }
+  #startBtn:hover {
+    background-color: blue;
+    color: white;
+  }
+  #stopBtn {
+    color: red;
+    outline: red;
+  }
+  #stopBtn:hover {
+    background-color: red;
+    color: white;
+  }
+  #resetBtn {
+    color: grey;
+    outline: gray;
+  }
+  #resetBtn:hover {
+    background-color: gray;
+    color: white;
+  }
+  /* /mdeia */
+  @media (max-width: 500px) {
+    #watchContainer {
+      width: 23rem;
+      height: 16rem;
+    }
+  }
